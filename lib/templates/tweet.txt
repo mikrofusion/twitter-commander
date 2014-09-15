@@ -1,0 +1,8 @@
+
+{{#retweeted}}
+Retweeted by {{retweetedByName}} (@{{retweetedByScreenName}})
+{{/retweeted}}
+{{name}} (@{{screenName}}) • {{timeSincePost}}
+{{&text}}
+    {{retweetCount}} retweets. {{favoriteCount}} favorites.
+

@@ -1,0 +1,47 @@
+{
+  "name": "twitter-commander",
+  "description": "A Twitter command line interface in node.",
+  "version": "0.0.0",
+  "homepage": "http://github.com/mikrofusion/twitter-commander",
+  "bugs": "https://github.com/mikrofusion/twitter-commander/issues",
+  "license": {
+    "type": "MIT",
+    "url": "http://github.com/mikrofusion/twitter-commander/raw/master/LICENSE"
+  },
+  "main": "lib/twitter-commander.js",
+  "author": {
+    "name": "Mike Groseclose",
+    "email": "mike.groseclose@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikrofusion/twitter-commander"
+  },
+  "keywords":[],
+  "dependencies": {
+    "bacon-and-eggs": "0.1.9",
+    "dotenv": "0.4.0",
+    "chalk": "0.5.1",
+    "gob": "1.0.1",
+    "mustache": "0.8.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-util": "2.2.16",
+    "gulp-bump": "^0.1.8",
+    "gulp-jscs": "^0.4.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-mocha": "^0.4.1",
+    "gulp-istanbul": "^0.2.0",
+    "should": "^3.3.1",
+    "jshint-stylish": "^0.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-plumber": "^0.6.2"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "bin": {
+    "twitter-commander": "bin/twitter-commander.js"
+  }
+}
