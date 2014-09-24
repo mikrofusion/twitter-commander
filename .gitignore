@@ -5,4 +5,5 @@ build
 *.node
 components
 .env
+coverage
 
