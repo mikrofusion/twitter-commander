@@ -1,4 +1,3 @@
-
 {{#retweeted}}
 Retweeted by {{retweetedByName}} (@{{retweetedByScreenName}})
 {{/retweeted}}
