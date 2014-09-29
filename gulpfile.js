@@ -19,6 +19,9 @@ gulp.task('lint', function () {
 });
 
 gulp.task('istanbul', function (cb) {
+
+  process.env.NODE_ENV = 'TEST';
+
   gulp.src(paths.source)
     .pipe(plugins.istanbul()) // Covering files
     .on('finish', function () {
