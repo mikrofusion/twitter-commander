@@ -3,28 +3,25 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var Timeline = require('../lib/timeline.js');
-
-var Bacon = Timeline.Bacon;
+var timeline = require('../lib/timeline.js');
+var Bacon = timeline.Bacon;
 
 describe('timeline', function () {
-  var result;
-  var timeline;
+  var result = undefined;
   var bus = new Bacon.Bus();
 
   beforeEach(function() {
-    sinon.stub(Timeline.BaconAndEggs, 'toRateLimitedEventStream', function() {
+    sinon.stub(timeline.BaconAndEggs, 'toRateLimitedEventStream', function() {
       return bus;
     });
 
-    timeline = new Timeline({});
     timeline.timeline().onValue(function(x) { result = x; });
 
     bus.push(['foo', 'bar', 'biz', 'baz']);
   });
 
   afterEach(function() {
-    Timeline.BaconAndEggs.toRateLimitedEventStream.restore();
+    timeline.BaconAndEggs.toRateLimitedEventStream.restore();
   });
 
   describe('when the timeline has not been moved', function() {
