@@ -41,7 +41,7 @@ Copyright (c) 2014 Mike Groseclose. Licensed under the MIT license.
 
 [npm-url]: https://npmjs.org/package/twitter-commander
 [npm-image]: https://badge.fury.io/js/twitter-commander.svg
-[travis-url]: https://travis-ci.org/mikegroseclose/twitter-commander
-[travis-image]: https://travis-ci.org/mikegroseclose/twitter-commander.svg?branch=master
-[daviddm-url]: https://david-dm.org/mikegroseclose/twitter-commander.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/mikegroseclose/twitter-commander
+[travis-url]: https://travis-ci.org/mikrofusion/twitter-commander
+[travis-image]: https://travis-ci.org/mikrofusion/twitter-commander.svg?branch=master
+[daviddm-url]: https://david-dm.org/mikrofusion/twitter-commander.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/mikrofusion/twitter-commander
