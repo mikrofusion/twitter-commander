@@ -36,12 +36,12 @@ describe('timelineView', function() {
     });
   });
 
-  describe('printTweet', function() {
+  describe('formatTweet', function() {
     describe('given an invalid (null) tweet', function() {
       it('returns null', function() {
         var tweet = null;
         var now = null;
-        var result = timelineView.printTweet(tweet, now);
+        var result = timelineView.formatTweet(tweet, now);
         expect(result).to.eq(null);
       });
     });
@@ -62,7 +62,7 @@ describe('timelineView', function() {
             favorite_count: 13
           };
           now = new Date(2014, 5, 4, 3, 2, 1);
-          result = timelineView.printTweet(tweet, now);
+          result = timelineView.formatTweet(tweet, now);
         });
 
         it('does not contain retweet info', function() {
@@ -115,7 +115,7 @@ describe('timelineView', function() {
             }
           };
           now = new Date(2014, 5, 4, 3, 2, 1);
-          result = timelineView.printTweet(tweet, now);
+          result = timelineView.formatTweet(tweet, now);
         });
 
         it('contains the retweet info', function() {
