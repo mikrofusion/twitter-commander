@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var timelineView = require('../lib/timeline-view.js');
+var timelineView = require('../lib/timeline/timeline-view.js');
 
 describe('timelineView', function() {
   describe('timeSince', function() {

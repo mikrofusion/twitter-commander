@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var timeline = require('../lib/timeline.js');
+var timeline = require('../lib/timeline/timeline.js');
 var Bacon = timeline.Bacon;
 
 describe('timeline', function () {
