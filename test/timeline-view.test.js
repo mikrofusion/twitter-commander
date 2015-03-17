@@ -42,7 +42,7 @@ describe('timelineView', function() {
         var tweet = null;
         var now = null;
         var result = timelineView.formatTweet(tweet, now);
-        expect(result).to.eq(null);
+        expect(result).to.eq('\nloading...\n');
       });
     });
 
